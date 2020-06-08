@@ -56,6 +56,7 @@
     <Compile Include="XMLData\EffectUnit.cs" />
     <Compile Include="XMLData\Common.cs" />
     <Compile Include="XMLData\EffectCity.cs" />
+    <Compile Include="XMLData\IXmlFile.cs" />
     <Compile Include="XMLData\Trait.cs" />
     <Compile Include="XMLParser\OldWorldXmlParser.cs" />
   </ItemGroup>

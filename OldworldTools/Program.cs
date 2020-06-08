@@ -27,11 +27,16 @@ namespace OldworldTools
             // If found, add to output obj
 
             OldWorldXmlParser parser = new OldWorldXmlParser();
-            var vals = parser.GetArchtypes(new List<string>() { "ZEALOT", "TRACKER" });
-            foreach(var val in vals["ZEALOT"])
+            var vals = parser.GetArchtypeMetadata();
+            foreach(var key in vals)
             {
-                Console.WriteLine($"{val.Key} + {val.Value}");
+                Console.WriteLine(key.Key);
+                foreach (var val in key.Value)
+                {
+                    Console.WriteLine($"{val.Key} + {val.Value}");
+                }
             }
+            
             Console.Read();
 
         }

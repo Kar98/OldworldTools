@@ -100,6 +100,22 @@ namespace OldworldTools.XMLData
 
         private EntryAeNegativeRating aeNegativeRatingField;
 
+        public bool IsArchtype()
+        {
+            if (bArchetypeField == null)
+            {
+                return false;
+            }
+            if(bArchetypeField == "1")
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
         /// <remarks/>
         public string zType
         {
